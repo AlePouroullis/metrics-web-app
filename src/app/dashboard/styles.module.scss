@@ -1,0 +1,28 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+
+  .header {
+    margin-left: 15px;
+    h1 {
+      font-size: 25px;
+    }
+  }
+  .nav {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+}

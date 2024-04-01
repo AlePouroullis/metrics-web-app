@@ -1,0 +1,27 @@
+.container {
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  text-align: center;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: -150px;
+}
+
+.infoText {
+  font-size: 14px;
+}
