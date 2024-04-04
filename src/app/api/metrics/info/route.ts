@@ -9,7 +9,9 @@ export async function GET(request: NextRequest) {
   // ensure request contains session cookie and is valid
   const user = await getCurrentUser();
   if (!user) {
-    return NextResponse.redirect("/login");
+    const url = request.nextUrl.clone()
+    url.pathname = "/login"
+    return NextResponse.redirect(url);
   }
 
   // Products
