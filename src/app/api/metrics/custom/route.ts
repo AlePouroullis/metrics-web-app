@@ -29,7 +29,6 @@ export async function GET(request: NextRequest) {
     ],
   });
 
-  console.log(completion);
 
   // return random metric data
   return NextResponse.json({

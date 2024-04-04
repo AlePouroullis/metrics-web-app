@@ -1,0 +1,29 @@
+.tableHeader {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.row {
+  &.even {
+    background-color: #eeeeee; // Light grey for even rows
+  }
+  &.odd {
+    background-color: #ffffff; // White for odd rows
+  }
+}
+
+.body {
+  position: relative;
+  min-height: 150px;
+}
+
+.loadingWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,79 @@
+.content {
+  position: relative;
+  min-height: 100px;
+}
+
+.metricsList {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    display: flex;
+    gap: 5px;
+
+    .right {
+      margin-left: auto;
+    }
+  }
+}
+
+.loadingWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.listItemWithInnerList {
+  display: flex;
+  flex-direction: column;
+}
+
+.indentedList {
+  padding-left: 20px;
+  // gap between list items
+  margin-top: 5px;
+  // gap between li's
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+.innerListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.infoIcon {
+  font-size: 20px;
+}
+
+.indicatorIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  &.increase {
+    background-color: #d4edda;
+    color: #155724;
+  }
+
+  &.decrease {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+
+  .icon {
+    font-size: 16px;
+  }
+}

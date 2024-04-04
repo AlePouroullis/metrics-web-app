@@ -1,0 +1,30 @@
+.metricBase {
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 325px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.childrenWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.separator {
+  background-color: rgba(black, 0.2);
+  height: 1px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.dataItem {
+  display: flex;
+  justify-content: space-between;
+}

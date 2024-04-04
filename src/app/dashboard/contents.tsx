@@ -5,7 +5,6 @@ import styles from "./styles.module.scss";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { IconButton } from "@mui/material";
 import Metrics from "./_components/Metrics";
-import MetricPrompt from "./_components/MetricPrompt";
 
 export default function DashboardPageContents() {
   const router = useRouter();
@@ -18,7 +17,7 @@ export default function DashboardPageContents() {
     }
   };
   return (
-    <div>
+    <div className={styles.wrapper}>
       <div className={styles.topBar}>
         <div className={styles.header}>
           <h1>Stripe Metrics</h1>
@@ -31,7 +30,6 @@ export default function DashboardPageContents() {
       </div>
       <div className={styles.content}>
         <Metrics />
-        <MetricPrompt />
       </div>
     </div>
   );

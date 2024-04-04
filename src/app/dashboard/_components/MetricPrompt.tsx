@@ -7,6 +7,7 @@ import {
   Box,
   CircularProgress,
 } from "@mui/material";
+import MetricsGroupBase from "./MetricsGroupBase";
 
 export default function MetricPrompt() {
   const [input, setInput] = useState("");
@@ -28,7 +29,8 @@ export default function MetricPrompt() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, mx: "auto", my: 4 }}>
+    <MetricsGroupBase title={"Get Custom Metric"}>
+      <p>Under construction</p>
       <TextField
         fullWidth
         label="Enter Metric Name"
@@ -43,6 +45,7 @@ export default function MetricPrompt() {
         variant="contained"
         color="primary"
         onClick={fetchMetric}
+        disabled
         sx={{ display: "block", mx: "auto", mb: 2 }}
       >
         Get Metric
@@ -54,6 +57,6 @@ export default function MetricPrompt() {
           <Typography>{metricValue}</Typography>
         )}
       </Paper>
-    </Box>
+    </MetricsGroupBase>
   );
 }
